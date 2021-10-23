@@ -1,0 +1,36 @@
+.button {
+    width: 7.5em;
+    height: 2em;
+    background-color: white;
+    color: black;
+    font-size: 18pt;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:active {
+    transform: translateY(3px);
+    animation-name: clickAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes clickAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+
+    }
+    
+}
