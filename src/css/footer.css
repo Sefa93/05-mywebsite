@@ -15,10 +15,12 @@
     color: white;
     text-decoration: none;
     font-size: 1.5vw;
+    position: relative;
 }
 
 .footer i {
     font-size: 1.5vw;
+    position: relative;
 }
 
 
@@ -42,17 +44,17 @@
     }
     
     .footer i {
-        font-size: 3vw;
+        font-size: 1.5vh;
     }
 
     .footer a {
         color: white;
         text-decoration: none;
-        font-size: 5vw;
+        font-size: 1.5vh;
     }
 
     .social-media.icons a i {
-        font-size: 5.5vw;
+        font-size: 3.5vh;
     }
 
 

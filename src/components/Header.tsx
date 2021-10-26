@@ -22,17 +22,17 @@ function Header() {
             </span>
 
             <div className="navbar" id="myNavbar">
-                <Link to="/home">
+                <Link to="/home" onClick={enableResponsiveHeader}>
                     <p className="element"> Home </p>
                 </Link>
-                <Link to="/cv">
-                    <p className="element"> CV </p>
+                <Link to="/skills" onClick={enableResponsiveHeader}>
+                    <p className="element"> Skills </p>
                 </Link>
-                <Link to="/skills">
-                    <p className="element"> Skills</p>
+                <Link to="/cv" onClick={enableResponsiveHeader}>
+                    <p className="element" > CV</p>
                 </Link>
-                <Link to="/contact">
-                    <p className="element"> Contact </p>
+                <Link to="/aboutme" onClick={enableResponsiveHeader}>
+                    <p className="element"> About Me </p>
                 </Link>
 
                 <a href="#" className="icon" onClick={enableResponsiveHeader}>

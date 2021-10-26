@@ -1,131 +1,89 @@
 .content {
     width: 100%;
     height: 80vh;
-    background-color: white;   
-    overflow:  scroll;
+    background-color: black;   
     z-index: -1;
+    overflow: scroll;
+    font-size: 18pt;
+}
+
+.content::before {
+    content: "";
+    background-image: url('../assets/images/eagle.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    animation: changeOpacity 6s infinite;
+}
+
+@keyframes changeOpacity {
+    0% {
+        opacity: 0.3;
+    }
+    25% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.3;
+    }
 }
 
 .sidebar-left {
-    position: absolute;
-    width: 7vw;
-    height: fit-content;
-    float: left;
-    background-color: black;
+    width: 10vw;
     color: white;
     top: 25%;
     left: -5.5vw;
     transition: 0.3s;
     position: fixed;
+    border-radius: 0px 0.8vw 0.8vw 0px;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
     display: flex;
     flex-direction: column;
-    border-radius: 0px 0.8vw 0.8vw 0px;
+    background-color: white;
 }
 
 .sidebar-left:hover {
     left: 0;
-    
 }
 
 .sidebar-left a.icon {
-    font-size: 7.5vw;
-    color: white;
+    font-size: 7vw;
     text-decoration: none;
+    margin-left: 0.3vw;
+}
+
+.sidebar-left a.icon i.fab.fa-xing-square, i.fab.fa-linkedin, i.fab.fa-whatsapp-square{
+    color: black;
 }
 
 .sidebar-left a.icon i.fab.fa-xing-square:hover {
-    color: tomato;
+    color: #126567;
 }
 
 
 .sidebar-left a.icon i.fab.fa-linkedin:hover {
-    color: yellow;
+    color: #2867B2;
 }
-
 
 .sidebar-left a.icon i.fab.fa-whatsapp-square:hover {
-    color: springgreen;
+    color: #25D366;
 }
 
-
-.main-content {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    padding: 5vw;
-    font-size: 24pt;
-    text-align: center;
-    align-items: center;
-
-}
-
-.main-content p {
-    width: 50vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    color: black;
-    animation-name: textAppear;
-    animation-duration: 1s;
-}
-
-.main-content img {
-    width: 20%;
-    right: 0;
-    top: 10vw;
-    animation-name: imageAppear;
-    animation-duration: 1s;
-}
 
 @media screen and (max-width: 768px) {
-    .main-content {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+    .sidebar-left {
+        top: 40%;
     }
-    .main-content p {
-        width: 100%;
-        margin-top: 90vw;
+    .sidebar-left a.icon {
+        font-size: 3vh;
     }
-    
-    .main-content img {
-        position: relative;
-        right: 25vw;
-        width: 50vw;
-        margin-top: 10vw;
-        opacity: 0.5;
-    
-        
-    }
-    
-}
-
-
-@keyframes textAppear {
-    from {
-        transform: translateX(-50vw);
-    }
-    to {
-        transform: translateX(0vw);
-        
-    }
-    
-}
-
-@keyframes imageAppear {
-    from {
-        transform: translateX(50vw);
-    }
-    to {
-        transform: translateX(0vw);
-        
-    }
-    
-}
-
-.main-content img {
-    position: absolute;
 }

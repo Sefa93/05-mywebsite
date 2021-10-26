@@ -1,27 +1,35 @@
 import React from "react";
+import { Switch, Route } from "react-router";
 import '../css/content.css'
-import bjkTeam from '../assets//images/bjkTeam.jpg';
-import bats from '../assets/images/bats.png';
-import pjanic from '../assets/images/pjanic.jpg';
-import caglar from '../assets/images/caglar.png';
-import { Link } from "react-router-dom";
+import Home from "./contents/Home";
+import Skills from "./contents/Skills";
+import CV from "./contents/CV";
 
 function Content() {
     return (
         <div className="content">
-            
-            <div className="main-content">
-                <img src={caglar}/>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-    
+           
+            <Switch>
+                
+                <Route path="/home">
+                    <Home/>
+                </Route>
 
-            </div>
-            
+                <Route path="/skills">
+                    <Skills/>
+                        
+                </Route>
+
+                <Route path="/cv">
+                     <CV/>
+                </Route>
+
+                <Route path="/aboutme">
+                    
+                </Route>
+
+            </Switch>
+
             <div className="sidebar-left">
                 
                 <a href="#" className="icon">

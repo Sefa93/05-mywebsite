@@ -1,0 +1,49 @@
+.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vw 7.5vw;
+    gap: 7.5px;
+    position: relative;
+}
+
+.skill-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    width: 100%;
+    border: 1px solid white;
+    padding: 2px;
+    animation-name: abc;
+    animation-duration: 1s;
+    color: white;
+    
+}
+
+.info-wrapper .description-wrapper {
+    font-size: 18pt;
+    margin-top: 0.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .skill-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+
+@keyframes abc {
+    from {
+        transform: translateY(-150vh);
+    }
+
+    to {
+        transform: translateY(0vw);
+    }
+    
+}
+
+
