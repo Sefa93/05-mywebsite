@@ -17,7 +17,7 @@ function Header() {
     
     return (
         <div className="header">
-            <span className="logo" title="Sefa Kutlu">
+             <span className="logo">
                 SK
             </span>
 

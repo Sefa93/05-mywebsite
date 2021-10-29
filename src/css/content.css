@@ -1,10 +1,11 @@
 .content {
     width: 100%;
     height: 80vh;
+    min-width: 320px;
+    min-height: 448px;
     background-color: black;   
     z-index: -1;
     overflow: scroll;
-    font-size: 18pt;
 }
 
 .content::before {
@@ -35,13 +36,13 @@
     }
 }
 
-.sidebar-left {
-    width: 10vw;
+.content .sidebar-left {
+    width: 5.5vw;
     color: white;
-    top: 25%;
+    top: 33.33%;
     left: -5.5vw;
     transition: 0.3s;
-    position: fixed;
+    position: relative;
     border-radius: 0px 0.8vw 0.8vw 0px;
     border-top: 5px solid black;
     border-right: 5px solid black;
@@ -56,10 +57,12 @@
 }
 
 .sidebar-left a.icon {
-    font-size: 7vw;
+    font-size: 4vw;
+    margin-left: 0.5vw;
     text-decoration: none;
-    margin-left: 0.3vw;
+   
 }
+
 
 .sidebar-left a.icon i.fab.fa-xing-square, i.fab.fa-linkedin, i.fab.fa-whatsapp-square{
     color: black;

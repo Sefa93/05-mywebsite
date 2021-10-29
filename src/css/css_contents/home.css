@@ -1,7 +1,6 @@
 .home {
     width: 100vw;
     padding: 7.5vw;
-    font-size: 18pt;
     color: white;
     display: flex;
     text-align: left;
@@ -17,6 +16,12 @@
     animation-name: textAppear;
     animation-duration: 1s;
     animation-iteration-count: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        font-size: 11pt;
+    }
 }
 
 @keyframes changeBackgroundColor {
