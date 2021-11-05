@@ -24,7 +24,7 @@ function Home() {
                     
                     If you are currently interested to hire me than look at the <br/>
                     footer below. There you can find a link with the label <br/ >
-                    "for job offers click here" <br/>
+                    "for job offers click here"<br/>
                     <br/>
 
                     <i className="fas fa-arrow-left"></i> Right you can find a floating button with the various social networks <br/>
