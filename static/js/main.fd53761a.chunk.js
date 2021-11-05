@@ -1,2 +1,0 @@
-(this["webpackJsonp05-mywebsite"]=this["webpackJsonp05-mywebsite"]||[]).push([[0],{11:function(e,t,n){"use strict";n.r(t);var s=n(0),i=n.n(s),c=n(3),o=n.n(c),r=(n(8),n(9),n(1));var a=function(){return Object(r.jsx)("div",{className:"App",children:"Hello This is a web site of Sefa"})};o.a.render(Object(r.jsx)(i.a.StrictMode,{children:Object(r.jsx)(a,{})}),document.getElementById("root"))},8:function(e,t,n){},9:function(e,t,n){}},[[11,1,2]]]);
-//# sourceMappingURL=main.fd53761a.chunk.js.map
