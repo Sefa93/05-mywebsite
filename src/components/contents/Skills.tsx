@@ -11,7 +11,7 @@ function Skills() {
             {skillsArray.map((skill, index) => {
                 return (
 
-                    <div className="skill-wrapper">
+                    <div className="skill-wrapper" key={index}>
 
                         <div className="logo-wrapper">
                             {skill.logo}
@@ -19,7 +19,7 @@ function Skills() {
 
                         <div className="info-wrapper">
                             
-                            <h4>{skill.skillName}</h4>
+                            <h2>{skill.skillName}</h2>
                             
                             <div className="description-wrapper">
                                 {skill.description}    

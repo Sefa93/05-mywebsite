@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../css/header.css'
 
@@ -7,7 +7,7 @@ function Header() {
     function enableResponsiveHeader() {
         let x = document.getElementById('myNavbar');
         if (x?.className === 'navbar') {
-            x.className += " responsive"
+            x.className += " responsive";
         } else {
             if (x !== null)
                 x.className = "navbar";
@@ -22,7 +22,7 @@ function Header() {
             </span>
 
             <div className="navbar" id="myNavbar">
-                <Link to="/home" onClick={enableResponsiveHeader}>
+                <Link to="/" onClick={enableResponsiveHeader}>
                     <p className="element"> Home </p>
                 </Link>
                 <Link to="/skills" onClick={enableResponsiveHeader}>

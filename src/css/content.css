@@ -3,90 +3,80 @@
     height: 80vh;
     min-width: 320px;
     min-height: 448px;
-    background-color: black;   
-    z-index: -1;
     overflow: scroll;
+    background-image: linear-gradient( to right, black, black, gray);
+
 }
 
-.content::before {
-    content: "";
-    background-image: url('../assets/images/eagle.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.3;
-    animation: changeOpacity 6s infinite;
+.floating-container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 50vh;
 }
 
-@keyframes changeOpacity {
-    0% {
-        opacity: 0.3;
-    }
-    25% {
-        opacity: 0.6;
-    }
-    50% {
-        opacity: 0.6;
-    }
-    100% {
-        opacity: 0.3;
-    }
-}
-
-.content .sidebar-left {
-    width: 5.5vw;
+.floating-button {
+    width: 55px;
+    height: 55px;
+    background-image: linear-gradient( to right, red, red, white);
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
     color: white;
-    top: 33.33%;
-    left: -5.5vw;
-    transition: 0.3s;
-    position: relative;
-    border-radius: 0px 0.8vw 0.8vw 0px;
-    border-top: 5px solid black;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
+    box-shadow: 0px 2px 5px #666;
+    opacity: .4;
+}
+.floating-button:hover {
+    opacity: .9;
+}
+
+.social-media-container-hidden {
+    display: none;
+}
+    .social-media-container a.icon {
+        font-size: 55px;
+        animation: iconAnimation 1s;
+        animation-fill-mode: forwards;
+    }
+        .social-media-container a.icon i.fab.fa-xing-square {
+            margin-left: -5px;
+            color: #126567; 
+        }
+        .social-media-container a.icon i.fab.fa-xing-square:active {
+            transform: translateY(3px);
+        }
+        .social-media-container a.icon i.fab.fa-linkedin {
+            margin-left: 20px;
+            color: #2867B2;
+        }
+        .social-media-container a.icon i.fab.fa-linkedin:active {
+            transform: translateY(3px);
+        }
+        .social-media-container a.icon i.fab.fa-whatsapp-square {
+            margin-left: -5px;
+            color: #25D366;
+        }
+        .social-media-container a.icon i.fab.fa-whatsapp-square:active {
+            transform: translateY(3px);
+        }
+        @keyframes iconAnimation {
+            from {transform: rotateY(0deg);}
+            to {transform: rotateY(360deg);}
+        }
+
+.social-media-container {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    margin-top: -65px;
+    animation: socialMediaIconsAppear 0.3s;
+    animation-fill-mode: forwards;
 }
 
-.sidebar-left:hover {
-    left: 0;
-}
-
-.sidebar-left a.icon {
-    font-size: 4vw;
-    margin-left: 0.5vw;
-    text-decoration: none;
-   
-}
-
-
-.sidebar-left a.icon i.fab.fa-xing-square, i.fab.fa-linkedin, i.fab.fa-whatsapp-square{
-    color: black;
-}
-
-.sidebar-left a.icon i.fab.fa-xing-square:hover {
-    color: #126567;
-}
-
-
-.sidebar-left a.icon i.fab.fa-linkedin:hover {
-    color: #2867B2;
-}
-
-.sidebar-left a.icon i.fab.fa-whatsapp-square:hover {
-    color: #25D366;
-}
-
-
-@media screen and (max-width: 768px) {
-    .sidebar-left {
-        top: 40%;
+@keyframes socialMediaIconsAppear {
+    from {
+        transform: translateX(-200px)
     }
-    .sidebar-left a.icon {
-        font-size: 3vh;
+    to {
+        transform: translateX(0px)
     }
 }

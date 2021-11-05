@@ -3,4 +3,7 @@
   height: 100vh;
   min-width: 320px;
   min-height: 568px;
+  /*to center a website use max-width + margin: auto combo */
+  max-width: 1920px;
+  margin: auto;
 }

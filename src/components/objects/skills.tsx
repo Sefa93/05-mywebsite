@@ -8,6 +8,7 @@ import html5 from '../../assets/images/html5.png';
 import React from '../../assets/images/React.png';
 import NodeJs from '../../assets/images/NodeJs.png';
 import Mysql from '../../assets/images/Mysql.png';
+import Git from '../../assets/images/Git.png';
 
 
 interface Skill {
@@ -90,16 +91,19 @@ const skillHTML = {
     id: 7,
     skillName: "HTML5",
     logo: <img src={html5}/>,
-    description: "HTML is an language to define content for web pages / applications, like input fields, buttons, paragraphs etc."
-    + " Handle basic HTML elements like divs, buttons, inputs are no problem for me",
+    description: "HTML is an language to define content for web pages/applications, like input fields, buttons, paragraphs etc."
+    + " The Handling of basic HTML elements like divs, buttons, inputs are no problem for me",
 }
 
+/**
+ * React
+ */
 const skillReact = {
     id: 8,
     skillName: "React",
     logo: <img src={React}/>,
-    description: 'React is a popular fronted library build beautiful web pages. The guys from facebook & instagram did a great work to publish'
-    + " it as MIT licencse. Note that this page is created with React",
+    description: 'React is a popular fronted library to build beautiful web pages. The guys from facebook & instagram did a great work to publish'
+    + " it under the MIT licencse. Hint: This page was created with React",
 }
 
 const skillNodeJs = {
@@ -114,9 +118,17 @@ const skillMysql = {
     id: 10,
     skillName: "MySQL",
     logo: <img src={Mysql}/>,
-    description: 'MySQL is a popular database. I have worked with MySQL workbench to create my own database scheme, tables with columns and connect my backend to it'
-    + " with node's mysql module",
+    description: 'MySQL is a popular database. I worked with MySQL workbench to create my own database scheme and tables to connect it'
+    + " with my react application",
+}
+
+const skillGit = {
+    id: 11,
+    skillName: "Git",
+    logo: <img src={Git}/>,
+    description: "Git is a software to manage different software versions (local or remote). It's very helpful for tracebility of software errors."
+    + " So far i used the commands for creating a branch, commit, push and pull."
 }
 
 
-export const skillsArray = [skillJava, skillCpp, skillPython, skillTypescript, skillJavascript, skillCss, skillHTML, skillReact, skillNodeJs, skillMysql]
+export const skillsArray = [skillJava, skillCpp, skillPython, skillTypescript, skillJavascript, skillCss, skillHTML, skillReact, skillNodeJs, skillMysql, skillGit]

@@ -1,12 +1,12 @@
 import React from "react";
 
 import '../../css/css_contents/home.css'
-import '../../css/button.css'
+
+import vida from '../../assets/images/vida.png';
 
 function Home() {
     return (
         <div className="home">
-            
 
                 <p>
                     Hello, <br/>
@@ -27,7 +27,7 @@ function Home() {
                     "for job offers click here" <br/>
                     <br/>
 
-                    <i className="fas fa-arrow-left"></i> Right you can find my job profiles on the various social networks <br/>
+                    <i className="fas fa-arrow-left"></i> Right you can find a floating button with the various social networks <br/>
                     (currently not active on there)
                     <br/><br/>
 
@@ -37,8 +37,6 @@ function Home() {
 
                 </p>
 
-
-          
         </div>
     );
 }

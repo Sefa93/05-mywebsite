@@ -1,9 +1,9 @@
 interface Information {
-    Name: string;
-    Age: number;
-    Email: string;
-    Nationality: string;
-    Gender: string;
+    name: string;
+    age: number;
+    email: string;
+    nationality: string;
+    gender: string;
 }
 
 interface Education {
@@ -20,11 +20,11 @@ interface Language {
 }
 
 export const personalInformation: Information = {
-    Name: 'Sefa',
-    Age: 28,
-    Email: "Due to spam only on request",
-    Nationality: "german",
-    Gender: "male", 
+    name: 'Sefa',
+    age: 28,
+    email: "Due to spam only on request",
+    nationality: "german",
+    gender: "male", 
 }
 
 export const educations: Education[] = [
@@ -67,11 +67,11 @@ export const educations: Education[] = [
 
 export const langugaes: Language[] = [
     {
-        language: "German (native speaker)",
+        language: "German",
         isNative: true,
     },
     {
-        language: "Turkish (native)",
+        language: "Turkish",
         isNative: true,
     },
     {
@@ -82,7 +82,7 @@ export const langugaes: Language[] = [
 
 export const activities: string[] = [
     "Studying interesting stuff", 
-    "restoring/ upgrading old apple imacs",
+    "restoring/upgrading old apple macs",
     "soldering",
     "watching soccer",
     "playing soccer",

@@ -3,7 +3,7 @@
     height: 10vh;
     min-height: 60px;
     min-width: 320px;
-    background-color: red;
+    background-image: linear-gradient(to right, black, red, gray);
     color: white;
     border-top: 1px solid gray;
     display: flex;
@@ -16,27 +16,26 @@
 .footer a {
     color: white;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1.5em;
     position: relative;
 }
 
 .footer i {
-    font-size: 0.93vw;
-    position: relative;
+    font-size: 1.2em;
 }
 
 
 .social-media.icons {
     display: flex;
     flex-direction: row;
-    gap: 0.5vw;
+    gap: 10px;
     
 }
 
 .social-media.icons a i {
-    font-size: 2.5vw;
+    font-size: 2em;
 }
-
+/*
 @media screen and (min-width: 1950px) {
     .footer i {
         font-size: 3vw;
@@ -48,27 +47,24 @@
         font-size: 5.5vw;
     }
 
-}
+}*/
 
 
 @media screen and (max-width: 768px) {
-    .footer {
-        background-color: black;
-    }
-    
     .footer i {
-        font-size: 1.5vh;
+        font-size: 0.5em;
     }
 
     .footer a {
         color: white;
         text-decoration: none;
-        font-size: 1.5vh;
+        font-size: 0.903em;
+    }
+    .social-media.icons {
+        gap: 2.5px;
     }
 
     .social-media.icons a i {
-        font-size: 2.5vh;
+        font-size: 2em;
     }
-
-
 }
