@@ -27,24 +27,24 @@ function Content() {
         <div className="content">
            
             <Switch>
-                <Route exact path="/">
+                <Route exact path="/05-mywebsite">
                     <Home/>
                 </Route>
 
-                <Route exact path="/skills">
+                <Route exact path="/05-mywebsite/skills">
                     <Skills/>
                         
                 </Route>
 
-                <Route exact path="/cv">
+                <Route exact path="/05-mywebsite/cv">
                      <CV/>
                 </Route>
 
-                <Route exact path="/aboutme">
+                <Route exact path="/05-mywebsite/aboutme">
                     <AboutMe/>
                 </Route>
 
-                <Route path="/">
+                <Route path="/05-mywebsite/">
                     <p style={{color: 'white', fontSize: '24pt', display: 'flex', justifyContent: 'center'}}>
                         The requested URL does not exist my friend 
                     </p>
@@ -57,16 +57,16 @@ function Content() {
                 </button>
                 
                 <div className="social-media-container-hidden" id="social-media-area">
-                    <a href="/xing" className="icon">
+                    <a className="icon">
                         <i className="fab fa-xing-square" title="Xing"/>
                     </a>    
 
                     
-                    <a href="/linkedin" className="icon">
+                    <a className="icon">
                         <i className="fab fa-linkedin" title="LinkedIn"/>
                     </a>
 
-                    <a href="/whatsapp" className="icon">
+                    <a className="icon">
                         <i className="fab fa-whatsapp-square" title="Whatsapp"/>
                     </a>
                 </div>
