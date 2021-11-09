@@ -57,7 +57,7 @@ function Content() {
                 </button>
                 
                 <div className="social-media-container-hidden" id="social-media-area">
-                    <a className="icon">
+                    <a href="https://www.xing.com/profile/Sefa_Kutlu/cv" className="icon">
                         <i className="fab fa-xing-square" title="Xing"/>
                     </a>    
 
@@ -66,7 +66,7 @@ function Content() {
                         <i className="fab fa-linkedin" title="LinkedIn"/>
                     </a>
 
-                    <a className="icon">
+                    <a href="mailto:businesskutlu93@gmail.com?subject=Request WhatsApp Number" className="icon">
                         <i className="fab fa-whatsapp-square" title="Whatsapp"/>
                     </a>
                 </div>

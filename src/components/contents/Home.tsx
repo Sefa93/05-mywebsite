@@ -28,7 +28,7 @@ function Home() {
                     <br/>
 
                     <i className="fas fa-arrow-left"></i> Right you can find a floating button with the various social networks <br/>
-                    (currently not active on there)
+                    (currently active on xing and whatsapp)
                     <br/><br/>
 
                     <i className="fas fa-arrow-down"></i> On the Bottom you can
